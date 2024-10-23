@@ -1,14 +1,14 @@
 import { cn } from "@/lib/utils";
 
 interface Props {
-  name: string;
+  children: React.ReactNode;
   className?: string;
 }
 
-const PrimaryButton: React.FC<Props> = ({name, className}) => {
+const PrimaryButton: React.FC<Props> = ({children, className}) => {
   return (
     <button className={cn('primary_link', className)}>
-      {name}
+      {children}
     </button>
   );
 };

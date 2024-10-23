@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { slideInFromBottom, slideInFromTop } from "@/lib/motion";
 
-import { projects } from "./data";
+import { projects } from "../app/data/data";
 import Link from "next/link";
 import { BiLinkExternal } from "react-icons/bi";
 import Image from "next/image";
@@ -13,24 +13,24 @@ const Projects = () => {
     <motion.section
       initial="hidden"
       whileInView="visible"
-      className="flex items-center mt-[80px] min-h-screen overflow-hidden text-[#e5e7eb]"
+      className="flex items-center mt-[40px] pb-24 min-h-screen overflow-hidden text-[#e5e7eb]"
       id="projects"
     >
       <div className="max-w-[1440px] px-[20px] pb-[30px] mx-auto ">
-        <motion.div>
-          <motion.h2
-            variants={slideInFromTop(0.2, 2)}
-            className="pt-[80px] mb-[40px] title-h2   text-[40px] sm:text-[50px] md:text-[60px] xxs:text-[45px] leading-tight capitalize text-center"
+        <motion.div variants={slideInFromBottom(0.3, 2.5)}>
+          <h2
+            // variants={slideInFromTop(0.2, 2)}
+            className="mt-[80px] pb-16 title-h2   text-[40px] sm:text-[50px] md:text-[60px] xxs:text-[45px] leading-tight capitalize text-center"
           >
             Lasted Projects
-          </motion.h2>
+          </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-[25px] pb-[70px]">
-            {projects.map((item) => (
+            {projects.map((item, index) => (
               <motion.div
                 initial="hidden"
                 whileInView="visible"
-                key={item.id}
+                key={Math.random()}
                 className="projectsBox relative flex rounded-[20px] border-[2px] border-[#0ef] shadow-[0_0_10px_rgb(0,238,255)] overflow-hidden"
                 variants={slideInFromBottom(0.3, 2.5)}
               >

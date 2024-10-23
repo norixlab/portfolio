@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, forwardRef } from "react";
 import { motion } from "framer-motion";
 import Typed from "typed.js";
 import Image from "next/image";
@@ -14,11 +14,13 @@ import { AiFillInstagram, AiOutlineGithub } from "react-icons/ai";
 // import { SlSocialVkontakte } from "react-icons/sl";
 import { SiWhatsapp } from "react-icons/si";
 import { BiLogoTelegram } from "react-icons/bi";
-import PrimaryLink from "./ui/Link";
+import PrimaryLink from "./ui/link";
 
 // import styles from "./hero.module.css";
 
 const Hero = () => {
+
+
   const socialLink = [
     { path: "#", icon: <AiFillInstagram size={22} /> },
     { path: "#", icon: <AiOutlineGithub size={22} /> },
@@ -42,9 +44,10 @@ const Hero = () => {
   }, []);
   return (
     <motion.section
+   
       initial="hidden"
       whileInView="visible"
-      className="flex relative items-center pt-[80px] min-h-screen overflow-hidden"
+      className="flex relative items-center pt-[80px] mb-10 min-h-screen overflow-hidden"
       id="home"
     >
       <Image src={'/decor-right.svg'} alt="decor" width={500} height={600} className="absolute w-1/2 max-h-[600px] top-1/2 translate-y-[-40%] right-0 z-[-1]" />
@@ -89,28 +92,14 @@ const Hero = () => {
                   </Link>
                 </li>
               ))}
-              {/* <li>
-                                <Link className={styles.socialLink} href="#">
-                                    <AiOutlineGithub size={22} />
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className={styles.socialLink} href="#">
-                                    <SlSocialVkontakte size={20} />
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className={styles.socialLink} href="#">
-                                    <BiLogoTelegram size={20} />
-                                </Link>
-                            </li> */}
+
             </ul>
 
             <PrimaryLink name="Contact Me" href="#contacts" />
           </motion.div>
 
           <div
-            // initial={{ opacity: 0 }}
+           
             // animate={{ opacity: 1, transition: { duration: 2, delay: 0.7 } }}
             className="relative inline-block"
           >

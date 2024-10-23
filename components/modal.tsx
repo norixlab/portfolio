@@ -8,7 +8,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "./ui/dialog";
-import PrimaryButton from "./ui/Button";
+import PrimaryButton from "./ui/button";
 
 interface Props {
   className?: string;
