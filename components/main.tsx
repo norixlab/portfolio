@@ -2,13 +2,8 @@
 
 import React from "react";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
-import About from "./about";
-import Hero from "./hero";
-
+import { Skills, Contacts, Resources, Hero, About } from "./sections";
 import Projects from "./projects";
-
-import { Skills, Contacts, Resources } from "./sections";
-
 import { ToTop } from "./ui/to-top";
 
 const MyPortfolio = () => {
@@ -27,16 +22,13 @@ const MyPortfolio = () => {
     <div className="max-w-[1920px]   mx-auto relative">
       <main className="overflow-hidden">
         <motion.div className="progress " style={{ scaleX: scrollYProgress }} />
-
         <Hero />
         <About />
-
         <Skills />
         <Resources />
         <Projects />
         <Contacts />
       </main>
-
       <ToTop isVisible={isVisible} />
     </div>
   );

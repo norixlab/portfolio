@@ -21,7 +21,7 @@ export const Ring: React.FC<Props> = ({ icon, href, variant, className }) => {
         <div className="ringItem"></div>
         <div className="ringItem"></div>
         <Link href={href} className="cursor-pointer z-[60]">
-          <span className="cursor-pointer text-[50px] text-white  transition-all duration-200 hover:drop-shadow-[0_0_4px_rgb(171,236,61)] hover:scale-110">
+          <span className="cursor-pointer text-[27px] md:text-[50px] text-white  transition-all duration-200 hover:drop-shadow-[0_0_4px_rgb(171,236,61)] hover:scale-110">
             {icon}
           </span>
         </Link>

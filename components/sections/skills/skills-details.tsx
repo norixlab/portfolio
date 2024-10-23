@@ -17,7 +17,7 @@ export const SkillsDetails: React.FC<Props> = ({
 }) => {
   return (
     <div className={cn(" w-full space-y-2", className)}>
-      <h4 className="text-2xl text-zinc-300 uppercase font-semibold text-center">
+      <h4 className="text-[22px] sm:text-2xl py-3 text-zinc-300 uppercase font-semibold text-center">
         {title}
       </h4>
       <div

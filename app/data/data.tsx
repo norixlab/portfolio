@@ -21,10 +21,6 @@ export interface Rings {
   href: string;
 }
 
-interface Link {
-  title: string;
-  url: string;
-}
 
 export const links = [
   {

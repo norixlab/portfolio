@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import { slideInFromRight, slideInFromTop } from "@/lib/motion";
 
 import Image from "next/image";
-import PrimaryLink from "./ui/link";
+import PrimaryLink from "../../ui/link";
 
-const About = () => {
+export const About = () => {
   return (
     <motion.section
       initial="hidden"
@@ -21,7 +21,7 @@ const About = () => {
         alt="decor"
         width={500}
         height={600}
-       className="absolute w-1/2 max-h-[600px] top-1/2 -translate-y-1/3  left-0 z-[-1]"
+       className="absolute md:w-1/2 max-h-[600px] bottom-[13%] lg:top-1/2 lg:-translate-y-1/3  left-0 z-[-1]"
       />
       
 
@@ -43,16 +43,16 @@ const About = () => {
 
           <motion.div
             variants={slideInFromRight(0.2, 2)}
-            className="max-w-[650px] lg:pt-0 pt-[80px] order-1"
+            className="max-w-[650px] lg:pt-0 pt-[50px] sm:pt-[80px] order-1"
           >
             <motion.h2
               variants={slideInFromTop(0.2, 2)}
-              className="title-h2 font-[Orbitron] text-[40px] sm:text-[50px] md:text-[60px] text-left   xxs:text-[45px] capitalize leading-tight	 "
+              className="title-h2 font-[Orbitron] text-[35px] sm:text-[50px] md:text-[60px] text-left   xxs:text-[45px] capitalize leading-tight	 "
             >
               About Me
             </motion.h2>
-            <h3 className="text-[29px] font-bold mb-[20px]">
-              Frontend Developer!
+            <h3 className="text-[25px] sm:text-[32px] font-bold mb-[20px]">
+            Full Stack Web Developer
             </h3>
             <p className="mb-[50px] text-[19px] leading-snug	">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
@@ -71,4 +71,4 @@ const About = () => {
   );
 };
 
-export default About;
+

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { slideInFromBottom } from "@/lib/motion";
 import { SkillsDetails } from "../skills";
 import { mainSkills, secondarySkills } from "@/app/data";
-import { Container } from "@/components/container";
+import { Container } from "@/components/shared/container";
 
 interface Props {
   className?: string;
@@ -16,20 +16,20 @@ export const Resources: React.FC<Props> = ({ className }) => {
       initial="hidden"
       whileInView="visible"
       className={cn(
-        "flex items-center mt-[40px] pb-24 min-h-screen overflow-hidden text-[#e5e7eb]",
+        "flex items-center mt-[20px] md:pb-[10px] md:mt-[30px] pb-24 min-h-screen overflow-hidden text-[#e5e7eb]",
         className
       )}
       id="resources"
     >
       <Container className="w-full">
-      <motion.div variants={slideInFromBottom(0.3, 2.5)} className="pt-5 ">
-        <h2 className="pt-[40px] mb-[50px] title-h2  text-[40px] sm:text-[50px] md:text-[60px] xxs:text-[45px]  capitalize text-center">
+      <motion.div variants={slideInFromBottom(0.3, 2.5)} className="sm:pt-5 ">
+        <h2 className="md:pt-[40px] mb-[50px] title-h2  text-[35px] sm:text-[50px] md:text-[60px] xxs:text-[45px] leading-10 md:leading-normal capitalize text-center">
           Is used in the development
         </h2>
 
         <motion.div
           variants={slideInFromBottom(0.3, 2.5)}
-          className="flex gap-8 "
+          className="flex flex-col md:flex-row gap-10 md:gap-8 "
         >
           <SkillsDetails
             title="frontend & backend"

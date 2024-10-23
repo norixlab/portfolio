@@ -139,7 +139,7 @@ body {
 
 @layer components {
   .primary_link {
-    @apply outLine  uppercase py-[10px] px-[30px] primary_gradient text-black rounded-[10px]  hover:shadow-[0_0_15px_rgb(171,236,61)] hover:text-white text-[17px]  font-bold transition-all;
+    @apply outLine  uppercase  primary_gradient text-black rounded-[10px]  hover:shadow-[0_0_15px_rgb(171,236,61)] hover:text-white text-[17px]  font-bold transition-all;
   }
 }
 .primary_gradient {
@@ -393,6 +393,12 @@ body {
   /* border-color: #2400c4; */
   -webkit-animation: ring-rotate-3 2s linear infinite;
   animation: ring-rotate-3 2s linear infinite;
+}
+@media(max-width: 768px) {
+  .ringItem {
+    width: 100px;
+    height: 100px;
+  }
 }
 @keyframes ring-rotate-1 {
   0% {

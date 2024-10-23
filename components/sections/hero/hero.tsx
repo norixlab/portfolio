@@ -14,11 +14,11 @@ import { AiFillInstagram, AiOutlineGithub } from "react-icons/ai";
 // import { SlSocialVkontakte } from "react-icons/sl";
 import { SiWhatsapp } from "react-icons/si";
 import { BiLogoTelegram } from "react-icons/bi";
-import PrimaryLink from "./ui/link";
+import PrimaryLink from "../../ui/link";
 
 // import styles from "./hero.module.css";
 
-const Hero = () => {
+export const Hero = () => {
 
 
   const socialLink = [
@@ -50,22 +50,23 @@ const Hero = () => {
       className="flex relative items-center pt-[80px] mb-10 min-h-screen overflow-hidden"
       id="home"
     >
-      <Image src={'/decor-right.svg'} alt="decor" width={500} height={600} className="absolute w-1/2 max-h-[600px] top-1/2 translate-y-[-40%] right-0 z-[-1]" />
+      <Image src={'/decor-right.svg'} alt="decor" width={500} height={600} className="absolute lg:w-1/2 max-h-[600px] top-[22%] lg:top-1/2 lg:translate-y-[-40%] right-0 z-[-1]" />
       <div className="max-w-[1440px] w-full pb-[30px] px-[10px] mx-auto">
-        <div className="flex flex-col-reverse lg:flex-row justify-between items-center gap-[50px]">
+        <div className="flex flex-col-reverse lg:flex-row justify-between items-center gap-[30px] sm:gap-[50px]">
           <motion.div
             variants={slideInFromTop(0.2, 2)}
             className="text-[#e5e7eb] "
           >
             <motion.p
               variants={slideInFromRight(0.2, 2)}
-              className=" font-bold text-[32px] leading-snug"
+              className=" font-bold text-[25px] sm:text-[32px] leading-snug"
             >
-              Hello, It&apos;s Me
+              Hello, my name&apos;s 
+           
             </motion.p>
             <motion.h1
               variants={slideInFromLeft(0.2, 2)}
-              className="font-bold title-h2 lg:promoTitleRev font-[Orbitron] text-[40px] sm:text-[50px] md:text-[56px] text-left   xxs:text-[45px] capitalize leading-snug	"
+              className="font-bold title-h2 lg:promoTitleRev font-[Orbitron] text-[35px] sm:text-[50px] md:text-[56px] text-left   xxs:text-[45px] capitalize leading-snug	"
             >
               Sergey Taydakov
             </motion.h1>
@@ -120,4 +121,3 @@ const Hero = () => {
   );
 };
 
-export default Hero;

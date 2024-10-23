@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio of Sergey Taydakov
 
-## Getting Started
+## Описание
+Добро пожаловать в мое портфолио! Здесь вы найдете информацию обо мне, моем опыте и примерах проектов, над которыми я работал. Цель сайта — предоставить работодателям и клиентам возможность оценить мои навыки разработки веб-приложений и мобильных решений.
 
-First, run the development server:
+## Стек технологий
+Данный сайт-портфолио построен на современных frontend-технологиях, в других проектах я также работал с backend-решениями.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Для портфолио:
+- **Современный стек технологий**: сайт построен с использованием **Next.js**, **Framer Motion**, **Cloudinary** и **Tailwind CSS**.
+- **Интерактивные элементы**: плавные анимации и интерактивные компоненты.
+- **Мобильная оптимизация**: адаптивный дизайн, поддерживающий работу на всех устройствах.
+- **Многоязычная поддержка**: возможность переключения между несколькими языками (английский, русский, армянский).
+- **Интеграция с внешними сервисами**: Cloudinary для хранения, оптимизации и автоматической конвертации изображений.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### В других проектах:
+- **Frontend**: React, Next.js
+- **Backend**: Node.js, Express, ORM (Prisma, Mongoose), PostgreSQL, MongoDB
+- **Аутентификация**: JWT, Bcrypt/Bcryptjs, NextAuth, Clerk
+- **Статическая генерация**: Next.js SSG и ISR
+- **Серверный рендеринг (SSR)**: Next.js
+- **Валидация**: Zod для форм и данных
+- **Платежи**: Stripe, GoPay и ЮKassa интеграции
+- **Состояние**: Zustand для управления состоянием
+- **Запросы к данным**: Tanstack Query
+- **Анимации**: CSS, Framer Motion и React-состояния
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Как это работает?
+Этот проект не требует установки, поскольку это публичный сайт. Вы можете посетить его, перейдя по ссылке:
 
-## Learn More
+[Посетить портфолио](https://portfolio.norixlab.com)
 
-To learn more about Next.js, take a look at the following resources:
+Здесь вы найдете разделы:
+- **Обо мне**: краткая биография и информация о моем профессиональном опыте.
+- **Стек технологий**: cтек технологий, используемых мной в проектах.
+- **Контакты**: формы для обратной связи и ссылки на социальные сети.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Скриншоты
+![Главная страница портфолио](https://ваш-сайт.com/screenshot-main.png)
+![Раздел проектов](https://ваш-сайт.com/screenshot-projects.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## О планах на будущее
+Я работаю над созданием своего проекта, который на начальном этапе будет включать:
 
-## Deploy on Vercel
+- **Регистрация пользователей**: возможность создания аккаунтов с личным кабинетом.
+- **Внутренний магазин**: раздел для продажи товаров (программное обеспечение) или услуг.
+- **Новости в сфере ИИ и кибербезопасности**: актуальные обновления, включая информацию о новых уязвимостях и передовых разработках.
+- **Аналитические материалы**: статьи и ресурсы, новыми технологиями, безопасности и другим актуальным темам.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Этот проект нацелен на создание динамичной платформы, которая будет полезна для разработчиков и специалистов в области кибербезопасности, 
+и планируется его дальнейшее расширение с добавлением новых функций и разделов в будущем.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Контакты
+Если у вас возникнут вопросы или предложения по сотрудничеству, свяжитесь со мной:
+- Email: s.taydakov@gmail.com
+- Telegram: [Telegram](https://t.me/norixlab)
+- Whatsapp: [Whatsapp](https://wa.me/message/W7TW3RZT2NESN1)

@@ -8,7 +8,7 @@ interface Props {
 }
 const PrimaryLink: React.FC<Props> = ({name, href, className}) => {
   return (
-    <Link  href={href} className={cn('primary_link', className)}>
+    <Link  href={href} className={cn('primary_link py-[10px] px-[30px]', className)}>
       {name}
     </Link>
   );

@@ -54,7 +54,7 @@ const Header = () => {
             Portfolio
           </Link>
           </div>
-           <nav className="w-full">
+           <nav className="w-full hidden md:block">
               <ul className="flex items-center gap-10">
                 {links.map((link) => (
                   <li key={link.url}>
