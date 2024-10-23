@@ -14,14 +14,15 @@ const play = Play({
 
 const publicId = "images/code";
 // const headline = "High-Performance Image & Video Delivery at Scale in Next.js"  ;
-   const headline = "E-commerce projects\, admin panels\, integrations with payment systems" ;
+   const headline = "E-commerce projects and admin dashboards, integration with payment systems and more.";
+   
 // `"Full stack веб-разработчик. Опыт создания современных веб-приложений с использованием Next.js, React, Node.js и ORM (Prisma, Mongoose). Проекты включают электронную коммерцию, админ-панели, интеграции с платежными системами и другие. Узнайте больше о моих навыках и опыте в веб-разработке."`;
 
 
 // "Портфолио full stack разработчика: Next.js, React, Node.js, Prisma, Mongoose. Проекты электронной коммерции, админ-панели, интеграции с платежными системами."
 const tagline = "Sergey Taydakov";
 const phone = "+374 (95) 35-38-37"
-const logoPublicId = "images/cmty3ca6n39ofutxnyi1";
+const logoPublicId = "images/logo";
 
 export const metadata: Metadata = {
   title: "Portfolio",
